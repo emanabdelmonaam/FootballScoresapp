@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     static final String score_Team_One = "scoreTeamOne";
     static final String score_Team_Two = "scoreTeamTwo";
     static final String scfaul_Team_One = "scfaulTeamOne";
@@ -17,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     static final String sc_Red_One = "scRedOne";
     static final String sc_Red_Two = "scRedTwo";
 
-    ////////////////////////
     int scoreTeamOne = 0;
     int scoreTeamTwo = 0;
     int scfaulTeamOne= 0;
@@ -27,19 +25,15 @@ public class MainActivity extends AppCompatActivity {
     int scRedOne=0;
     int scRedTwo=0;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-
         displayForTeamOne(0);
-        displayForFaulTeamOne(0);    }
+        displayForFaulTeamOne(0);}
 
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
+    public void onRestoreInstanceState(Bundle savedInstanceState){
         super.onRestoreInstanceState(savedInstanceState);
 
         scoreTeamOne = savedInstanceState.getInt(score_Team_One);
@@ -58,13 +52,10 @@ public class MainActivity extends AppCompatActivity {
         displayForYellwoTeamOne(scYellwoOne);
         displayForYellwoTeamTwo(scYellwoTwo);
         displayForRedTeamOne(scRedOne);
-        displayForRedTeamTwo(scRedTwo);
-
-
-    }
+        displayForRedTeamTwo(scRedTwo);}
 
     @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
+    public void onSaveInstanceState(Bundle savedInstanceState){
         savedInstanceState.putInt(score_Team_One , scoreTeamOne);
         savedInstanceState.putInt(score_Team_Two , scoreTeamTwo);
         savedInstanceState.putInt(scfaul_Team_One , scfaulTeamOne);
@@ -73,35 +64,29 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt(sc_Yellwo_Two , scYellwoTwo);
         savedInstanceState.putInt(sc_Red_One , scRedOne);
         savedInstanceState.putInt(sc_Red_Two , scRedTwo);
-        super.onSaveInstanceState(savedInstanceState);
-    }
+        super.onSaveInstanceState(savedInstanceState);}
 
-
-
-    public void displayForTeamOne(int score) {
+    public void displayForTeamOne(int score){
         TextView scoreView = (TextView) findViewById(R.id.addOneTeamOne);
         scoreView.setText(String.valueOf(score));}
 
-         public void teamOne(View view) {
+         public void teamOne(View view){
           scoreTeamOne= scoreTeamOne + 1;
            displayForTeamOne(scoreTeamOne);}
 
-
-
-    public void displayForTeamTwo(int score) {
+    public void displayForTeamTwo(int score){
         TextView scoreView = (TextView) findViewById(R.id.addOneTeamTwo);
         scoreView.setText(String.valueOf(score));}
 
-    public void teamTwo(View view) {
-           scoreTeamTwo = scoreTeamTwo + 1;
-           displayForTeamTwo(scoreTeamTwo);}
+         public void teamTwo(View view){
+             scoreTeamTwo = scoreTeamTwo + 1;
+             displayForTeamTwo(scoreTeamTwo);}
 
-
-     public void displayForFaulTeamOne(int score) {
+     public void displayForFaulTeamOne(int score){
         TextView scoreView = (TextView) findViewById(R.id.addFaulOne);
         scoreView.setText(String.valueOf(score));}
 
-           public void faul_Team_One(View view) {
+           public void faul_Team_One(View view){
                scfaulTeamOne = scfaulTeamOne + 1;
                displayForFaulTeamOne(scfaulTeamOne);}
 
@@ -109,47 +94,43 @@ public class MainActivity extends AppCompatActivity {
            TextView scoreView = (TextView) findViewById(R.id.addFaulTwo);
            scoreView.setText(String.valueOf(score));}
 
-     public void faul_Team_Two(View view) {
-             scfaulTeamTwo = scfaulTeamTwo + 1;
-             displayForFaulTeamTwo(scfaulTeamTwo);}
+           public void faul_Team_Two(View view){
+               scfaulTeamTwo = scfaulTeamTwo + 1;
+               displayForFaulTeamTwo(scfaulTeamTwo);}
 
-    public void displayForYellwoTeamOne(int score) {
+    public void displayForYellwoTeamOne(int score){
         TextView scoreView = (TextView) findViewById(R.id.yallowTeamOne);
         scoreView.setText(String.valueOf(score));}
 
-        public void yallow_Team_One(View view) {
-           scYellwoOne = scYellwoOne + 1;
-           displayForYellwoTeamOne(scYellwoOne);}
+           public void yallow_Team_One(View view){
+                scYellwoOne = scYellwoOne + 1;
+                displayForYellwoTeamOne(scYellwoOne);}
 
-    public void displayForYellwoTeamTwo(int score) {
+    public void displayForYellwoTeamTwo(int score){
         TextView scoreView = (TextView) findViewById(R.id.yallowTeamTwot);
         scoreView.setText(String.valueOf(score));}
 
-       public void yallow_Team_Two(View view) {
-          scYellwoTwo = scYellwoTwo + 1;
-          displayForYellwoTeamTwo(scYellwoTwo);}
+           public void yallow_Team_Two(View view){
+                scYellwoTwo = scYellwoTwo + 1;
+                displayForYellwoTeamTwo(scYellwoTwo);}
 
-    public void displayForRedTeamOne(int score) {
+    public void displayForRedTeamOne(int score){
         TextView scoreView = (TextView) findViewById(R.id.addredTeamOne);
         scoreView.setText(String.valueOf(score));}
 
-       public void red_Team_One(View view) {
-           scRedOne = scRedOne + 1;
-           displayForRedTeamOne(scRedOne);}
+            public void red_Team_One(View view){
+                scRedOne = scRedOne + 1;
+                displayForRedTeamOne(scRedOne);}
 
-
-    public void displayForRedTeamTwo(int score) {
+    public void displayForRedTeamTwo(int score){
         TextView scoreView = (TextView) findViewById(R.id.addredTeamTwo);
         scoreView.setText(String.valueOf(score));}
 
-          public void red_Team_Two(View view) {
-            scRedTwo = scRedTwo + 1;
-            displayForRedTeamTwo(scRedTwo);}
+             public void red_Team_Two(View view){
+                  scRedTwo = scRedTwo + 1;
+                  displayForRedTeamTwo(scRedTwo);}
 
-
-
-
-    public void resetZeroForeGame(View view) {
+    public void resetZeroForeGame(View view){
         displayForTeamOne(0);
         displayForTeamTwo(0);
         displayForFaulTeamOne(0);
@@ -167,10 +148,4 @@ public class MainActivity extends AppCompatActivity {
         scYellwoTwo =0;
         scRedOne=0;
         scRedTwo=0;
-    }
-
-
-}
-
-
-
+    }}

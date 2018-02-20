@@ -1,9 +1,245 @@
 <resources>
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#4CAF50</item>
-        <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#1B5E20</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorGreend</item>
+        <item name="colorButtonNormal">@color/colorGreend</item>
+        <item name="colorPrimaryDark">@color/colorGreend</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ScrollView_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bakefotball</item>
+    </style>
+
+    <style name="LinearLayout_one">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayout_two">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">@dimen/LinearLayout_two_marginTop</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LinearLayout_three">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ImageView_one">
+        <item name="android:layout_width">@dimen/layout_BottonW_one</item>
+        <item name="android:layout_height">@dimen/layout_BottonH_one</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom_one</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/boyteamone</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ButtonGoal_teamOne">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">@string/onClick_teamOne</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">@dimen/text_team_marginBottom</item>
+        <item name="android:text">@string/textGoal_team</item>
+        <item name="android:textSize">@dimen/textName_team_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWait</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextNumber_teamone1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorRedL</item>
+        <item name="android:layout_marginBottom">@dimen/text_team_marginBottom</item>
+        <item name="android:text">@string/textNumber_team</item>
+        <item name="android:textSize">@dimen/textNumber_team_size</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ImageView_Two">
+        <item name="android:layout_width">@dimen/layout_BottonW_one</item>
+        <item name="android:layout_height">@dimen/layout_BottonH_one</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom_one</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/boyteamtwo</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ButtonGoal_teamTwo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">@string/onClick_teamTwo</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">@dimen/text_team_marginBottom</item>
+        <item name="android:text">@string/textGoal_team</item>
+        <item name="android:textSize">@dimen/textName_team_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWait</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextNumber_teamtwo2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginBottom">@dimen/text_team_marginBottom</item>
+        <item name="android:text">@string/textNumber_team</item>
+        <item name="android:textSize">@dimen/textNumber_team_size</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LinearLayout_four">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LinearLayout_five">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="button_teamOne_faul">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/faulText_teamOne_marginLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/text_faulTeamOne</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">@string/onClick_faulTeamOne</item>
+        <item name="android:textSize">@dimen/FYRText_teamOne_size</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="button_teamOne_yellow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/faulText_teamOne_marginLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/text_yallowTeamOne</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">@string/onClick_yallowTeamOne</item>
+        <item name="android:textSize">@dimen/FYRText_teamOne_size</item>
+        <item name="android:layout_marginTop">@dimen/FYRText_teamOne_maragintop</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="button_teamOne_red">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/faulText_teamOne_marginLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/text_redTeamOne</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">@string/onClick_redTeamOne</item>
+        <item name="android:textSize">@dimen/FYRText_teamOne_size</item>
+        <item name="android:layout_marginTop">@dimen/FYRText_teamOne_maragintop</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="LinearLayout_six">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="textFaul_teamOne">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">@dimen/first_zero_teamOne_marginTop</item>
+        <item name="android:text">@string/textZeroTeamOne</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textZero_size</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="textFaul2_3_teamOne">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">@dimen/secondAndTherd_zero_teamOne_marginTop</item>
+        <item name="android:text">@string/textZeroTeamOne</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textZero_size</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="button_teamTwo_faul">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">@dimen/faulText_teamOne_marginLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/text_faulTeamTwo</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">@string/onClick_faulTeamTwo</item>
+        <item name="android:textSize">@dimen/FYRText_teamOne_size</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="button_teamTwo_yellow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">@dimen/faulText_teamOne_marginLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/text_yallowTeamTwo</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">@string/onClick_yallowTeamTwo</item>
+        <item name="android:textSize">@dimen/FYRText_teamOne_size</item>
+        <item name="android:layout_marginTop">@dimen/FYRText_teamOne_maragintop</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="button_teamTwo_red">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">@dimen/faulText_teamOne_marginLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/text_redTeamTwo</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">@string/onClick_redTeamTwo</item>
+        <item name="android:textSize">@dimen/FYRText_teamOne_size</item>
+        <item name="android:layout_marginTop">@dimen/FYRText_teamOne_maragintop</item>
+        <item name="android:textColor">@color/colorWait</item>
+    </style>
+
+    <style name="button_game_play_agan">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/button_playAgan_hight</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/button_play_Agan</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">@string/onClick_button_playAgan</item>
+        <item name="android:textSize">@dimen/button_playAgan_size</item>
+        <item name="android:layout_marginTop">@dimen/marginTop_button_playAgan</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom_button_playAgan</item>
+        <item name="android:textColor">@color/colorWait</item>
     </style>
 </resources>

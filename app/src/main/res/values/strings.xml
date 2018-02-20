@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Football Scores app</string>
+    <string name="onClick_teamOne">teamOne</string>
+    <string name="onClick_teamTwo">teamTwo</string>
+
+    <string name="textGoal_team">goal</string>
+
+    <string name="textNumber_team">0</string>
+
+
+    <string name="onClick_faulTeamOne">faul_Team_One</string>
+    <string name="text_faulTeamOne">faul</string>
+
+    <string name="onClick_yallowTeamOne">yallow_Team_One</string>
+       <string name="text_yallowTeamOne">Yellow Card</string>
+
+    <string name="onClick_redTeamOne">red_Team_One</string>
+    <string name="text_redTeamOne">red card</string>
+
+
+    <string name="onClick_faulTeamTwo">faul_Team_Two</string>
+    <string name="text_faulTeamTwo">faul</string>
+
+    <string name="onClick_yallowTeamTwo">yallow_Team_Two</string>
+    <string name="text_yallowTeamTwo">Yellow Card</string>
+
+    <string name="onClick_redTeamTwo">red_Team_Two</string>
+    <string name="text_redTeamTwo">red card</string>
+
+    <string name="textZeroTeamOne">0</string>
+    <string name="button_play_Agan">Play Again</string>
+    <string name="onClick_button_playAgan">resetZeroForeGame</string>
+
+
+
+
+
+
+
+
+
 </resources>
+
+
