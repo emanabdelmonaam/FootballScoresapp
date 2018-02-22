@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/ScrollView_parent">
-
   <LinearLayout
       style="@style/LinearLayout_one">
         <LinearLayout
@@ -18,7 +17,6 @@
                 android:textAlignment="center"
                 style="@style/TextNumber_teamone1"/>
         </LinearLayout>
-
         <LinearLayout
             style="@style/LinearLayout_three">
             <ImageView
@@ -32,7 +30,6 @@
                 style="@style/TextNumber_teamtwo2"/>
         </LinearLayout>
     </LinearLayout>
-
     <LinearLayout
         style="@style/LinearLayout_four">
         <LinearLayout
@@ -47,7 +44,6 @@
                 android:fontFamily="sans-serif-medium"
                 style="@style/button_teamOne_red"/>
         </LinearLayout>
-
         <LinearLayout
             style="@style/LinearLayout_six">
             <TextView
@@ -55,12 +51,11 @@
                 android:id="@+id/addFaulOne"/>
             <TextView
                 style="@style/textFaul2_3_teamOne"
-                android:id="@+id/yallowTeamOne"/>
+                android:id="@+id/yellowTeamOne"/>
             <TextView
                 style="@style/textFaul2_3_teamOne"
                 android:id="@+id/addredTeamOne"/>
         </LinearLayout>
-
         <LinearLayout
             style="@style/LinearLayout_six">
             <TextView
@@ -68,7 +63,7 @@
                 android:id="@+id/addFaulTwo"/>
             <TextView
                 style="@style/textFaul2_3_teamOne"
-                android:id="@+id/yallowTeamTwot"/>
+                android:id="@+id/yellowTeamTwot"/>
             <TextView
                 style="@style/textFaul2_3_teamOne"
                 android:id="@+id/addredTeamTwo"/>
@@ -78,21 +73,17 @@
             <Button
                 style="@style/button_teamTwo_faul"
                 android:fontFamily="sans-serif-medium"/>
-
             <Button
                 style="@style/button_teamTwo_yellow"
                 android:fontFamily="sans-serif-medium"/>
-
             <Button
                 style="@style/button_teamTwo_red"
                 android:fontFamily="sans-serif-medium"/>
         </LinearLayout>
     </LinearLayout>
-
     <Button
         android:id="@+id/resetzero"
         android:fontFamily="sans-serif-medium"
         style="@style/button_game_play_agan"/>
-
   </LinearLayout>
 </ScrollView>

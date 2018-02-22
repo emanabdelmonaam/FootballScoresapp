@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="layout_BottonH_one">80dp</dimen>
-    <dimen name="layout_BottonW_one">60dp</dimen>
+    <dimen name="layout_ButtonH_one">80dp</dimen>
+    <dimen name="layout_ButtonW_one">60dp</dimen>
     <dimen name="layout_marginBottom_one">15dp</dimen>
     <dimen name="LinearLayout_two_marginTop">20dp</dimen>
     <dimen name="text_team_marginBottom">8dp</dimen>
@@ -9,12 +9,12 @@
     <dimen name="textNumber_team_size">70sp</dimen>
     <dimen name="faulText_teamOne_marginLeft">10dp</dimen>
     <dimen name="FYRText_teamOne_size">12sp</dimen>
-    <dimen name="FYRText_teamOne_maragintop">6dp</dimen>
+    <dimen name="FYRText_teamOne_marginTop">6dp</dimen>
     <dimen name="first_zero_teamOne_marginTop">10dp</dimen>
     <dimen name="textZero_size">20sp</dimen>
-    <dimen name="secondAndTherd_zero_teamOne_marginTop">25dp</dimen>
-    <dimen name="button_playAgan_size">15sp</dimen>
-    <dimen name="button_playAgan_hight">60dp</dimen>
-    <dimen name="marginBottom_button_playAgan">15dp</dimen>
-    <dimen name="marginTop_button_playAgan">15dp</dimen>
+    <dimen name="secondAndThird_zero_teamOne_marginTop">25dp</dimen>
+    <dimen name="button_playAgain_size">15sp</dimen>
+    <dimen name="button_playAgain_highT">60dp</dimen>
+    <dimen name="marginBottom_button_playAgain">15dp</dimen>
+    <dimen name="marginTop_button_playAgain">15dp</dimen>
 </resources>

@@ -3,14 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="bBlacky">#000000</color>
-    <color name="oranggy">#FF3D00</color>
-    <color name="colorGreenl">#33691E</color>
-    <color name="colorGreend">#1B5E20</color>
+    <color name="BlackY">#000000</color>
+    <color name="orangeG">#FF3D00</color>
+    <color name="colorGreenL">#33691E</color>
+    <color name="colorGreenD">#1B5E20</color>
     <color name="colorWait">#FFFFFF</color>
     <color name="colorRedL">#F44336</color>
-
-
-
-
 </resources>

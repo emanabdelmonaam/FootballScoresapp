@@ -1,11 +1,9 @@
 package com.example.android.footballscoresapp;
-
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 public class MainActivity extends AppCompatActivity {
     static final String score_Team_One = "scoreTeamOne";
     static final String score_Team_Two = "scoreTeamTwo";
@@ -99,18 +97,18 @@ public class MainActivity extends AppCompatActivity {
                displayForFaulTeamTwo(scfaulTeamTwo);}
 
     public void displayForYellwoTeamOne(int score){
-        TextView scoreView = (TextView) findViewById(R.id.yallowTeamOne);
+        TextView scoreView = (TextView) findViewById(R.id.yellowTeamOne);
         scoreView.setText(String.valueOf(score));}
 
-           public void yallow_Team_One(View view){
+           public void yellow_Team_One(View view){
                 scYellwoOne = scYellwoOne + 1;
                 displayForYellwoTeamOne(scYellwoOne);}
 
     public void displayForYellwoTeamTwo(int score){
-        TextView scoreView = (TextView) findViewById(R.id.yallowTeamTwot);
+        TextView scoreView = (TextView) findViewById(R.id.yellowTeamTwot);
         scoreView.setText(String.valueOf(score));}
 
-           public void yallow_Team_Two(View view){
+           public void yellow_Team_Two(View view){
                 scYellwoTwo = scYellwoTwo + 1;
                 displayForYellwoTeamTwo(scYellwoTwo);}
 
